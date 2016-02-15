@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{05783864-B2CB-4F02-A2C4-5A10849BF565}</ProjectGuid>
+    <ProjectGuid>{360f64f0-92ab-452d-a824-cc4bf131bc66}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Engine.Core</RootNamespace>
-    <AssemblyName>Engine.Core</AssemblyName>
+    <RootNamespace>Engine.Core.ViewModels</RootNamespace>
+    <AssemblyName>Engine.Core.ViewModels</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,18 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\Engine.Core.Models\Engine.Core.Models.csproj">
-      <Project>{e89e1cb8-a83e-43ef-8bb7-fffad7c432a2}</Project>
-      <Name>Engine.Core.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Engine.Core.Services\Engine.Core.Services.csproj">
-      <Project>{2fbbb5fb-0da5-4884-a981-df6cdd378159}</Project>
-      <Name>Engine.Core.Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Engine.Core.ViewModels\Engine.Core.ViewModels.csproj">
-      <Project>{360f64f0-92ab-452d-a824-cc4bf131bc66}</Project>
-      <Name>Engine.Core.ViewModels</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
@@ -60,4 +48,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+
 </Project>
