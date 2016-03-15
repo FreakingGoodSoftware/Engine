@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Engine.DataAPI.Models;
+using Engine.DataAPI.Models.DTO;
 
 namespace Engine.DataAPI.Controllers
 {
@@ -18,9 +19,20 @@ namespace Engine.DataAPI.Controllers
         private AdventureWorksModel db = new AdventureWorksModel();
 
         // GET: api/ProductCategories
-        public IQueryable<ProductCategory> GetProductCategory()
+        public IQueryable<ProductCategoryDTO> GetProductCategory()
         {
-            return db.ProductCategory;
+            return db.ProductCategory.Select(c => new ProductCategoryDTO()
+            {
+                ModifiedDate = c.ModifiedDate,
+                Name = c.Name,
+                ParentProductCategoryID = c.ParentProductCategoryID,
+                //ProductCategories = c.ProductCategory1.Select(cs => new ProductCategoryDTO()
+                //{
+                //    Name = cs.Name,
+                //    ProductCategoryID = cs.ProductCategoryID
+                //}).ToList(),
+                ProductCategoryID = c.ProductCategoryID
+            });
         }
 
         // GET: api/ProductCategories/5
