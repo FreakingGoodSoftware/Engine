@@ -38,6 +38,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=0.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.0.9.6\lib\net45\Microsoft.Rest.ClientRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Swashbuckle.Core">
       <HintPath>..\packages\Swashbuckle.Core.5.0.0\lib\net40\Swashbuckle.Core.dll</HintPath>
     </Reference>
@@ -119,9 +123,29 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ProductCategoriesController.cs" />
+    <Compile Include="EngineDataAPI\IProductCategories.cs" />
+    <Compile Include="EngineDataAPI\IEngineDataAPI.cs" />
+    <Compile Include="EngineDataAPI\IValues.cs" />
+    <Compile Include="EngineDataAPI\Models\Product.cs" />
+    <Compile Include="EngineDataAPI\Models\ProductCategory.cs" />
+    <Compile Include="EngineDataAPI\Models\ProductCategoryDTO.cs" />
+    <Compile Include="EngineDataAPI\Models\ProductCategoryDTOCollection.cs" />
+    <Compile Include="EngineDataAPI\Models\ProductDescription.cs" />
+    <Compile Include="EngineDataAPI\Models\ProductModel.cs" />
+    <Compile Include="EngineDataAPI\Models\ProductModelProductDescription.cs" />
+    <Compile Include="EngineDataAPI\Models\SalesOrderDetail.cs" />
+    <Compile Include="EngineDataAPI\Models\StringCollection.cs" />
+    <Compile Include="EngineDataAPI\ProductCategories.cs" />
+    <Compile Include="EngineDataAPI\ProductCategoriesExtensions.cs" />
+    <Compile Include="EngineDataAPI\EngineDataAPI.cs" />
+    <Compile Include="EngineDataAPI\UnknowntypeExtensions.cs" />
+    <Compile Include="EngineDataAPI\Values.cs" />
+    <Compile Include="EngineDataAPI\ValuesExtensions.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Filters\HttpOperationExceptionFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
