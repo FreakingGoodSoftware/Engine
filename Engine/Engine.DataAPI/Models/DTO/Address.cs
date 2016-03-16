@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -12,9 +12,7 @@ namespace Engine.DataAPI.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Address()
         {
-            CustomerAddress = new HashSet<CustomerAddress>();
-            SalesOrderHeader = new HashSet<SalesOrderHeader>();
-            SalesOrderHeader1 = new HashSet<SalesOrderHeader>();
+            CustomerAddresses = new HashSet<CustomerAddress>();
         }
 
         public int AddressID { get; set; }
@@ -47,12 +45,6 @@ namespace Engine.DataAPI.Models
         public DateTime ModifiedDate { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CustomerAddress> CustomerAddress { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SalesOrderHeader> SalesOrderHeader { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SalesOrderHeader> SalesOrderHeader1 { get; set; }
+        public virtual ICollection<CustomerAddress> CustomerAddresses { get; set; }
     }
 }

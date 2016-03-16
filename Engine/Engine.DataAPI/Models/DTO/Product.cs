@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace Engine.DataAPI.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
-            SalesOrderDetail = new HashSet<SalesOrderDetail>();
+            SalesOrderDetails = new HashSet<SalesOrderDetail>();
         }
 
         public int ProductID { get; set; }
@@ -63,6 +63,6 @@ namespace Engine.DataAPI.Models
         public virtual ProductModel ProductModel { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SalesOrderDetail> SalesOrderDetail { get; set; }
+        public virtual ICollection<SalesOrderDetail> SalesOrderDetails { get; set; }
     }
 }

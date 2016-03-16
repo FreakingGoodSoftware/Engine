@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -37,7 +37,5 @@ namespace Engine.DataAPI.Models
         public DateTime ModifiedDate { get; set; }
 
         public virtual Product Product { get; set; }
-
-        public virtual SalesOrderHeader SalesOrderHeader { get; set; }
     }
 }

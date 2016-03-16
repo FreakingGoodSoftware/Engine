@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -7,7 +7,7 @@ namespace Engine.DataAPI.Models
     using System.Data.Entity.Spatial;
 
     [Table("SalesLT.vGetAllCategories")]
-    public partial class vGetAllCategories
+    public partial class vGetAllCategory
     {
         [Key]
         [StringLength(50)]

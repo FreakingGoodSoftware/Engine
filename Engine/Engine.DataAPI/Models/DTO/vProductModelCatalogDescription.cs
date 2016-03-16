@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;

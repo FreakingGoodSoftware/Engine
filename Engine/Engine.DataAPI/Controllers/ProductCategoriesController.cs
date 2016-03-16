@@ -14,32 +14,51 @@ using Engine.DataAPI.Models.DTO;
 
 namespace Engine.DataAPI.Controllers
 {
+    [RoutePrefix("api")]
     public class ProductCategoriesController : ApiController
     {
         private AdventureWorksModel db = new AdventureWorksModel();
 
         // GET: api/ProductCategories
-        public IQueryable<ProductCategoryDTO> GetProductCategory()
+        public IQueryable<ProductCategoryDTO> GetProductCategories()
         {
-            return db.ProductCategory.Select(c => new ProductCategoryDTO()
+            return db.ProductCategories.Select(c => new ProductCategoryDTO()
             {
-                ModifiedDate = c.ModifiedDate,
-                Name = c.Name,
+                ProductCategoryID = c.ProductCategoryID,
                 ParentProductCategoryID = c.ParentProductCategoryID,
-                //ProductCategories = c.ProductCategory1.Select(cs => new ProductCategoryDTO()
-                //{
-                //    Name = cs.Name,
-                //    ProductCategoryID = cs.ProductCategoryID
-                //}).ToList(),
-                ProductCategoryID = c.ProductCategoryID
+                Name = c.Name
+                //ProductCategories = db.ProductCategories
+                //    .Where(cc => cc.ParentProductCategoryID == c.ProductCategoryID)
+                //    .Select(cc => new ProductCategoryDTO()
+                //    {
+                //        ProductCategoryID = c.ProductCategoryID,
+                //        ParentProductCategoryID = c.ParentProductCategoryID,
+                //        Name = c.Name
+                //    })
             });
+        }
+
+        // GET: api/ProductChildCategories/1
+        [Route("ProductChildCategories/{id}")]
+        public IEnumerable<ProductCategoryDTO> GetProductChildCategories(int id)
+        {
+            var p = db.ProductCategories.First(c => c.ProductCategoryID == id).ProductCategories;
+            return db.ProductCategories
+                .First(c => c.ProductCategoryID == id)
+                .ProductCategories
+                .Select(c => new ProductCategoryDTO()
+                {
+                    ProductCategoryID = c.ProductCategoryID,
+                    ParentProductCategoryID = c.ParentProductCategoryID,
+                    Name = c.Name
+                });
         }
 
         // GET: api/ProductCategories/5
         [ResponseType(typeof(ProductCategory))]
         public async Task<IHttpActionResult> GetProductCategory(int id)
         {
-            ProductCategory productCategory = await db.ProductCategory.FindAsync(id);
+            ProductCategory productCategory = await db.ProductCategories.FindAsync(id);
             if (productCategory == null)
             {
                 return NotFound();
@@ -92,7 +111,7 @@ namespace Engine.DataAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.ProductCategory.Add(productCategory);
+            db.ProductCategories.Add(productCategory);
             await db.SaveChangesAsync();
 
             return CreatedAtRoute("DefaultApi", new { id = productCategory.ProductCategoryID }, productCategory);
@@ -102,13 +121,13 @@ namespace Engine.DataAPI.Controllers
         [ResponseType(typeof(ProductCategory))]
         public async Task<IHttpActionResult> DeleteProductCategory(int id)
         {
-            ProductCategory productCategory = await db.ProductCategory.FindAsync(id);
+            ProductCategory productCategory = await db.ProductCategories.FindAsync(id);
             if (productCategory == null)
             {
                 return NotFound();
             }
 
-            db.ProductCategory.Remove(productCategory);
+            db.ProductCategories.Remove(productCategory);
             await db.SaveChangesAsync();
 
             return Ok(productCategory);
@@ -125,7 +144,7 @@ namespace Engine.DataAPI.Controllers
 
         private bool ProductCategoryExists(int id)
         {
-            return db.ProductCategory.Count(e => e.ProductCategoryID == id) > 0;
+            return db.ProductCategories.Count(e => e.ProductCategoryID == id) > 0;
         }
     }
 }

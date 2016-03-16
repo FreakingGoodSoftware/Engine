@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -6,30 +6,29 @@ namespace Engine.DataAPI.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("SalesLT.ProductModelProductDescription")]
-    public partial class ProductModelProductDescription
+    [Table("SalesLT.CustomerAddress")]
+    public partial class CustomerAddress
     {
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int ProductModelID { get; set; }
+        public int CustomerID { get; set; }
 
         [Key]
         [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int ProductDescriptionID { get; set; }
+        public int AddressID { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
-        [StringLength(6)]
-        public string Culture { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string AddressType { get; set; }
 
         public Guid rowguid { get; set; }
 
         public DateTime ModifiedDate { get; set; }
 
-        public virtual ProductDescription ProductDescription { get; set; }
+        public virtual Address Address { get; set; }
 
-        public virtual ProductModel ProductModel { get; set; }
+        public virtual Customer Customer { get; set; }
     }
 }

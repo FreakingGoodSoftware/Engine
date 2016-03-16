@@ -15,8 +15,8 @@ namespace Engine.DataAPI.Models.DTO
 
         public DateTime ModifiedDate { get; set; }
 
-        public IEnumerable<Product> Products { get; set; }
+        //public IEnumerable<Product> Products { get; set; }
 
-        public IEnumerable<ProductCategoryDTO> ProductCategories { get; set; }
+        //public IEnumerable<ProductCategoryDTO> ProductCategories { get; set; }
     }
 }

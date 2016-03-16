@@ -144,21 +144,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\AdventureWorksModel.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\CustomerAddress.cs" />
+    <Compile Include="Models\DTO\Address.cs" />
+    <Compile Include="Models\DTO\AdventureWorksModel.cs" />
+    <Compile Include="Models\DTO\Customer.cs" />
+    <Compile Include="Models\DTO\CustomerAddress.cs" />
+    <Compile Include="Models\DTO\Product.cs" />
+    <Compile Include="Models\DTO\ProductCategory.cs" />
     <Compile Include="Models\DTO\ProductCategoryDTO.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ProductCategory.cs" />
-    <Compile Include="Models\ProductDescription.cs" />
-    <Compile Include="Models\ProductModel.cs" />
-    <Compile Include="Models\ProductModelProductDescription.cs" />
-    <Compile Include="Models\SalesOrderDetail.cs" />
-    <Compile Include="Models\SalesOrderHeader.cs" />
-    <Compile Include="Models\vGetAllCategories.cs" />
-    <Compile Include="Models\vProductAndDescription.cs" />
-    <Compile Include="Models\vProductModelCatalogDescription.cs" />
+    <Compile Include="Models\DTO\ProductDescription.cs" />
+    <Compile Include="Models\DTO\ProductModel.cs" />
+    <Compile Include="Models\DTO\ProductModelProductDescription.cs" />
+    <Compile Include="Models\DTO\SalesOrderDetail.cs" />
+    <Compile Include="Models\DTO\vGetAllCategory.cs" />
+    <Compile Include="Models\DTO\vProductAndDescription.cs" />
+    <Compile Include="Models\DTO\vProductModelCatalogDescription.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -6,33 +6,34 @@ namespace Engine.DataAPI.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("SalesLT.ProductModel")]
-    public partial class ProductModel
+    [Table("SalesLT.ProductCategory")]
+    public partial class ProductCategory
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ProductModel()
+        public ProductCategory()
         {
-            Product = new HashSet<Product>();
-            ProductModelProductDescription = new HashSet<ProductModelProductDescription>();
+            Products = new HashSet<Product>();
+            ProductCategories = new HashSet<ProductCategory>();
         }
 
-        public int ProductModelID { get; set; }
+        public int ProductCategoryID { get; set; }
+
+        public int? ParentProductCategoryID { get; set; }
 
         [Required]
         [StringLength(50)]
         public string Name { get; set; }
-
-        [Column(TypeName = "xml")]
-        public string CatalogDescription { get; set; }
 
         public Guid rowguid { get; set; }
 
         public DateTime ModifiedDate { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Product> Product { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductModelProductDescription> ProductModelProductDescription { get; set; }
+        public virtual ICollection<ProductCategory> ProductCategories { get; set; }
+
+        public virtual ProductCategory ParentProductCategory { get; set; }
     }
 }

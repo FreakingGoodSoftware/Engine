@@ -1,4 +1,4 @@
-namespace Engine.DataAPI.Models
+namespace Engine.DataAPI.Models.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -6,34 +6,33 @@ namespace Engine.DataAPI.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("SalesLT.ProductCategory")]
-    public partial class ProductCategory
+    [Table("SalesLT.ProductModel")]
+    public partial class ProductModel
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ProductCategory()
+        public ProductModel()
         {
-            Product = new HashSet<Product>();
-            ProductCategory1 = new HashSet<ProductCategory>();
+            Products = new HashSet<Product>();
+            ProductModelProductDescriptions = new HashSet<ProductModelProductDescription>();
         }
 
-        public int ProductCategoryID { get; set; }
-
-        public int? ParentProductCategoryID { get; set; }
+        public int ProductModelID { get; set; }
 
         [Required]
         [StringLength(50)]
         public string Name { get; set; }
+
+        [Column(TypeName = "xml")]
+        public string CatalogDescription { get; set; }
 
         public Guid rowguid { get; set; }
 
         public DateTime ModifiedDate { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Product> Product { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductCategory> ProductCategory1 { get; set; }
-
-        public virtual ProductCategory ProductCategory2 { get; set; }
+        public virtual ICollection<ProductModelProductDescription> ProductModelProductDescriptions { get; set; }
     }
 }
