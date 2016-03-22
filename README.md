@@ -1,5 +1,7 @@
 # Engine
 
+[![Join the chat at https://gitter.im/FreakingGoodSoftware/Engine](https://badges.gitter.im/FreakingGoodSoftware/Engine.svg)](https://gitter.im/FreakingGoodSoftware/Engine?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## What?
 Engine framework is a set of tools, guidance, knowledge base and repositories for developers working with Xamarin technologies and Microsoft related to create cross-platform mobile applications and solutions.
 
