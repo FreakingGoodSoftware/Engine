@@ -2,6 +2,7 @@
 using Engine.API.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -15,7 +16,7 @@ namespace Engine.API.Controllers
     {
         private static EngineDataAPI NewEngineDataAPIClient()
         {
-            var client = new EngineDataAPI(new Uri(""));
+            var client = new EngineDataAPI(new Uri(ConfigurationManager.AppSettings["DataAPIURL"]));
 
             return client;
         }
