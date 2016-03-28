@@ -2,7 +2,7 @@ using MvvmCross.Core.ViewModels;
 
 namespace Engine.Core.ViewModels
 {
-    public class FirstViewModel 
+    public class HubViewModel 
         : MvxViewModel
     {
         private string _hello = "Hello MvvmCross";

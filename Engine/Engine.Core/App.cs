@@ -12,7 +12,7 @@ namespace Engine.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.HubViewModel>();
         }
     }
 }
