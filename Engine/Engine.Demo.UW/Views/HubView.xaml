@@ -8,10 +8,9 @@
     xmlns:views="using:MvvmCross.WindowsUWP.Views"
     xmlns:viewmodels="using:Engine.Core.ViewModels"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   Text="{Binding Hello}" />
+        <ListView ItemsSource="{Binding MenuList}">
+            
+        </ListView>
     </Grid>
 </views:MvxWindowsPage>

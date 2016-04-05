@@ -106,6 +106,10 @@
     <InterfaceDefinition Include="Views\FirstView.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.2.1.0\lib\portable-net45+win+wpa81\Microsoft.Rest.ClientRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
       <Private>True</Private>

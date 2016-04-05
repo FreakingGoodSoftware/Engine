@@ -12,7 +12,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -141,6 +141,10 @@
     <ProjectReference Include="..\Engine.Core.Models\Engine.Core.Models.csproj">
       <Project>{e89e1cb8-a83e-43ef-8bb7-fffad7c432a2}</Project>
       <Name>Engine.Core.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine.Core.Services\Engine.Core.Services.csproj">
+      <Project>{2fbbb5fb-0da5-4884-a981-df6cdd378159}</Project>
+      <Name>Engine.Core.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\Engine.Core.ViewModels\Engine.Core.ViewModels.csproj">
       <Project>{360f64f0-92ab-452d-a824-cc4bf131bc66}</Project>
