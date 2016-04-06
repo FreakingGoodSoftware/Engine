@@ -14,6 +14,7 @@ namespace Engine.Core.ViewModels
             set { SetProperty (ref _hello, value); }
         }
 
+
         public List<string> MenuList { get; set; } = new List<string>
         {   "Web access",
             "Navigation",
@@ -29,12 +30,21 @@ namespace Engine.Core.ViewModels
         public HubViewModel(
             IWebAPIService webAPIService)
         {
-            //WebAPIService = webAPIService;
+            WebAPIService = webAPIService;
         }
 
         public void UIStart()
         {
             
         }
+
+        public IMvxCommand NavigateCommand
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<HubViewModel>());
+            }
+        }
+
     }
 }

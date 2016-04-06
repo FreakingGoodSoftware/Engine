@@ -17,26 +17,26 @@ namespace Engine.Core.Services
     }
     public interface IWebAPIService
     {
-        IConnectivity ConnectivityService { get; set; }
+        IConnectivity Connectivity { get; set; }
         Task<string> RequestAsync(string endpoint, string payload, HttpMethod method);
         Task<string> RequestAsyncAPI(string endpoint, string payload, HttpMethod method);
     }
     public class WebAPIService : IWebAPIService
     {
-        public IConnectivity ConnectivityService
+        public IConnectivity Connectivity
         {
             get;
             set;
         }
 
-        public WebAPIService()
+        public WebAPIService(IConnectivity connectivity)
         {
-
+            Connectivity = connectivity;
         }
 
         public async Task<string> RequestAsyncAPI(string endpoint, string payload, HttpMethod method)
         {
-            if (!ConnectivityService.IsConnected)
+            if (!Connectivity.IsConnected)
             {
                 throw new NotConnectedException("Not Connected");
             }
@@ -51,7 +51,7 @@ namespace Engine.Core.Services
 
         public async Task<string> RequestAsync(string endpoint, string payload, HttpMethod method)
         {
-            if (!ConnectivityService.IsConnected)
+            if (!Connectivity.IsConnected)
             {
                 throw new NotConnectedException("Not Connected");
             }
