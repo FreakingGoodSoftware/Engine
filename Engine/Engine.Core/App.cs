@@ -1,5 +1,7 @@
+using Engine.Core.Services;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.IoC;
+using System.Reflection;
 
 namespace Engine.Core
 {
@@ -7,7 +9,7 @@ namespace Engine.Core
     {
         public override void Initialize()
         {
-            CreatableTypes()
+            CreatableTypes(typeof(WebAPIService).GetTypeInfo().Assembly)
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();

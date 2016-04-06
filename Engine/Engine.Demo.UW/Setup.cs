@@ -30,5 +30,6 @@ namespace Engine.Demo.UW
             var assembly = typeof(HubViewModel).GetTypeInfo().Assembly;
             return new[] { assembly };
         }
+        
     }
 }

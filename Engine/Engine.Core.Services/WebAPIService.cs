@@ -29,6 +29,11 @@ namespace Engine.Core.Services
             set;
         }
 
+        public WebAPIService()
+        {
+
+        }
+
         public async Task<string> RequestAsyncAPI(string endpoint, string payload, HttpMethod method)
         {
             if (!ConnectivityService.IsConnected)

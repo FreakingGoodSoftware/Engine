@@ -7,7 +7,7 @@ namespace Engine.Demo.Android
     [Activity(
         Label = "Engine.Demo.Android"
         , MainLauncher = true
-        , Icon = "@drawable/icon"
+        , Icon = "@mipmap/icon"
         , Theme = "@style/Theme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]

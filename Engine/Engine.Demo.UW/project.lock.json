@@ -3,6 +3,20 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
+      "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.0.0, )",
+          "MvvmCross.Plugin.Messenger": "[4.0.0, )"
+        },
+        "compile": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/1.0.0": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
@@ -268,44 +282,57 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.0.0": {
+      "MvvmCross/4.1.0": {
         "dependencies": {
-          "MvvmCross.Binding": "[4.0.0, )",
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Binding": "[4.1.0, )",
+          "MvvmCross.Core": "[4.1.0, )"
         }
       },
-      "MvvmCross.Binding/4.0.0": {
+      "MvvmCross.Binding/4.1.0": {
         "dependencies": {
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Core": "[4.1.0, )"
         },
         "compile": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         },
         "runtime": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.0.0": {
+      "MvvmCross.Core/4.1.0": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.1.0, )"
+        },
+        "compile": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        }
+      },
+      "MvvmCross.Platform/4.1.0": {
+        "compile": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/4.0.0": {
         "dependencies": {
           "MvvmCross.Platform": "[4.0.0, )"
         },
         "compile": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         },
         "runtime": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
-        }
-      },
-      "MvvmCross.Platform/4.0.0": {
-        "compile": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
-        },
-        "runtime": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.8": {
@@ -1653,6 +1680,20 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.0.0, )",
+          "MvvmCross.Plugin.Messenger": "[4.0.0, )"
+        },
+        "compile": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/1.0.0": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
@@ -1961,44 +2002,57 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.0.0": {
+      "MvvmCross/4.1.0": {
         "dependencies": {
-          "MvvmCross.Binding": "[4.0.0, )",
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Binding": "[4.1.0, )",
+          "MvvmCross.Core": "[4.1.0, )"
         }
       },
-      "MvvmCross.Binding/4.0.0": {
+      "MvvmCross.Binding/4.1.0": {
         "dependencies": {
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Core": "[4.1.0, )"
         },
         "compile": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         },
         "runtime": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.0.0": {
+      "MvvmCross.Core/4.1.0": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.1.0, )"
+        },
+        "compile": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        }
+      },
+      "MvvmCross.Platform/4.1.0": {
+        "compile": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/4.0.0": {
         "dependencies": {
           "MvvmCross.Platform": "[4.0.0, )"
         },
         "compile": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         },
         "runtime": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
-        }
-      },
-      "MvvmCross.Platform/4.0.0": {
-        "compile": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
-        },
-        "runtime": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.8": {
@@ -3393,6 +3447,20 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.0.0, )",
+          "MvvmCross.Plugin.Messenger": "[4.0.0, )"
+        },
+        "compile": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/1.0.0": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
@@ -3687,44 +3755,57 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.0.0": {
+      "MvvmCross/4.1.0": {
         "dependencies": {
-          "MvvmCross.Binding": "[4.0.0, )",
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Binding": "[4.1.0, )",
+          "MvvmCross.Core": "[4.1.0, )"
         }
       },
-      "MvvmCross.Binding/4.0.0": {
+      "MvvmCross.Binding/4.1.0": {
         "dependencies": {
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Core": "[4.1.0, )"
         },
         "compile": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         },
         "runtime": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.0.0": {
+      "MvvmCross.Core/4.1.0": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.1.0, )"
+        },
+        "compile": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        }
+      },
+      "MvvmCross.Platform/4.1.0": {
+        "compile": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/4.0.0": {
         "dependencies": {
           "MvvmCross.Platform": "[4.0.0, )"
         },
         "compile": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         },
         "runtime": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
-        }
-      },
-      "MvvmCross.Platform/4.0.0": {
-        "compile": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
-        },
-        "runtime": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.8": {
@@ -5105,6 +5186,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.0.0, )",
+          "MvvmCross.Plugin.Messenger": "[4.0.0, )"
+        },
+        "compile": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/1.0.0": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
@@ -5418,44 +5513,57 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.0.0": {
+      "MvvmCross/4.1.0": {
         "dependencies": {
-          "MvvmCross.Binding": "[4.0.0, )",
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Binding": "[4.1.0, )",
+          "MvvmCross.Core": "[4.1.0, )"
         }
       },
-      "MvvmCross.Binding/4.0.0": {
+      "MvvmCross.Binding/4.1.0": {
         "dependencies": {
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Core": "[4.1.0, )"
         },
         "compile": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         },
         "runtime": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.0.0": {
+      "MvvmCross.Core/4.1.0": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.1.0, )"
+        },
+        "compile": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        }
+      },
+      "MvvmCross.Platform/4.1.0": {
+        "compile": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/4.0.0": {
         "dependencies": {
           "MvvmCross.Platform": "[4.0.0, )"
         },
         "compile": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         },
         "runtime": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
-        }
-      },
-      "MvvmCross.Platform/4.0.0": {
-        "compile": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
-        },
-        "runtime": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.8": {
@@ -6850,6 +6958,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.0.0, )",
+          "MvvmCross.Plugin.Messenger": "[4.0.0, )"
+        },
+        "compile": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/1.0.0": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
@@ -7144,44 +7266,57 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.0.0": {
+      "MvvmCross/4.1.0": {
         "dependencies": {
-          "MvvmCross.Binding": "[4.0.0, )",
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Binding": "[4.1.0, )",
+          "MvvmCross.Core": "[4.1.0, )"
         }
       },
-      "MvvmCross.Binding/4.0.0": {
+      "MvvmCross.Binding/4.1.0": {
         "dependencies": {
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Core": "[4.1.0, )"
         },
         "compile": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         },
         "runtime": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.0.0": {
+      "MvvmCross.Core/4.1.0": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.1.0, )"
+        },
+        "compile": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        }
+      },
+      "MvvmCross.Platform/4.1.0": {
+        "compile": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/4.0.0": {
         "dependencies": {
           "MvvmCross.Platform": "[4.0.0, )"
         },
         "compile": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         },
         "runtime": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
-        }
-      },
-      "MvvmCross.Platform/4.0.0": {
-        "compile": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
-        },
-        "runtime": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.8": {
@@ -8562,6 +8697,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.0.0, )",
+          "MvvmCross.Plugin.Messenger": "[4.0.0, )"
+        },
+        "compile": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/1.0.0": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
@@ -8875,44 +9024,57 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.0.0": {
+      "MvvmCross/4.1.0": {
         "dependencies": {
-          "MvvmCross.Binding": "[4.0.0, )",
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Binding": "[4.1.0, )",
+          "MvvmCross.Core": "[4.1.0, )"
         }
       },
-      "MvvmCross.Binding/4.0.0": {
+      "MvvmCross.Binding/4.1.0": {
         "dependencies": {
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Core": "[4.1.0, )"
         },
         "compile": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         },
         "runtime": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.0.0": {
+      "MvvmCross.Core/4.1.0": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.1.0, )"
+        },
+        "compile": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        }
+      },
+      "MvvmCross.Platform/4.1.0": {
+        "compile": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/4.0.0": {
         "dependencies": {
           "MvvmCross.Platform": "[4.0.0, )"
         },
         "compile": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         },
         "runtime": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
-        }
-      },
-      "MvvmCross.Platform/4.0.0": {
-        "compile": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
-        },
-        "runtime": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.8": {
@@ -10307,6 +10469,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.0.0, )",
+          "MvvmCross.Plugin.Messenger": "[4.0.0, )"
+        },
+        "compile": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll": {},
+          "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/1.0.0": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
@@ -10601,44 +10777,57 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.0.0": {
+      "MvvmCross/4.1.0": {
         "dependencies": {
-          "MvvmCross.Binding": "[4.0.0, )",
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Binding": "[4.1.0, )",
+          "MvvmCross.Core": "[4.1.0, )"
         }
       },
-      "MvvmCross.Binding/4.0.0": {
+      "MvvmCross.Binding/4.1.0": {
         "dependencies": {
-          "MvvmCross.Core": "[4.0.0, )"
+          "MvvmCross.Core": "[4.1.0, )"
         },
         "compile": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         },
         "runtime": {
+          "lib/win81/MvvmCross.Binding.dll": {},
           "lib/win81/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.0.0": {
+      "MvvmCross.Core/4.1.0": {
+        "dependencies": {
+          "MvvmCross.Platform": "[4.1.0, )"
+        },
+        "compile": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap/MvvmCross.Core.dll": {},
+          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+        }
+      },
+      "MvvmCross.Platform/4.1.0": {
+        "compile": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        },
+        "runtime": {
+          "lib/win81/MvvmCross.Platform.dll": {},
+          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/4.0.0": {
         "dependencies": {
           "MvvmCross.Platform": "[4.0.0, )"
         },
         "compile": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         },
         "runtime": {
-          "lib/uap/MvvmCross.Core.dll": {},
-          "lib/uap/MvvmCross.WindowsUWP.dll": {}
-        }
-      },
-      "MvvmCross.Platform/4.0.0": {
-        "compile": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
-        },
-        "runtime": {
-          "lib/win81/MvvmCross.Platform.dll": {},
-          "lib/win81/MvvmCross.Platform.WindowsCommon.dll": {}
+          "lib/win81/MvvmCross.Plugins.Messenger.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.8": {
@@ -12020,6 +12209,42 @@
     }
   },
   "libraries": {
+    "Cheesebaron.MvxPlugins.Connectivity/0.0.2": {
+      "sha512": "CpFAbSbftUahB9QwmRoq6/Hr3+wCUAGPzaaJpwGb+WgIISdRxjXzgxHC08c/5wVkpd67YD+/Bl+U0zHkOfjKzg==",
+      "type": "Package",
+      "files": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "Cheesebaron.MvxPlugins.Connectivity.nuspec",
+        "content/MonoAndroid10/Bootstrap/ConnectivityPluginBootstrap.cs.pp",
+        "content/win81/Bootstrap/ConnectivityPluginBootstrap.cs.pp",
+        "content/wpa81/Bootstrap/ConnectivityPluginBootstrap.cs.pp",
+        "content/Xamarin.iOS10/Bootstrap/ConnectivityPluginBootstrap.cs.pp",
+        "lib/dotnet/Cheesebaron.MvxPlugins.Connectivity.dll",
+        "lib/dotnet/Cheesebaron.MvxPlugins.Connectivity.dll.mdb",
+        "lib/MonoAndroid10/Cheesebaron.MvxPlugins.Connectivity.dll",
+        "lib/MonoAndroid10/Cheesebaron.MvxPlugins.Connectivity.dll.mdb",
+        "lib/MonoAndroid10/Cheesebaron.MvxPlugins.Connectivity.Droid.dll",
+        "lib/portable-net45+win+wpa81/Cheesebaron.MvxPlugins.Connectivity.dll",
+        "lib/portable-net45+win+wpa81/Cheesebaron.MvxPlugins.Connectivity.dll.mdb",
+        "lib/portable-win81+wpa81/Cheesebaron.MvxPlugins.Connectivity.dll",
+        "lib/portable-win81+wpa81/Cheesebaron.MvxPlugins.Connectivity.dll.mdb",
+        "lib/portable-win81+wpa81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll",
+        "lib/portable-win81+wpa81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.pri",
+        "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll",
+        "lib/win81/Cheesebaron.MvxPlugins.Connectivity.dll.mdb",
+        "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll",
+        "lib/win81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.pri",
+        "lib/wpa81/Cheesebaron.MvxPlugins.Connectivity.dll",
+        "lib/wpa81/Cheesebaron.MvxPlugins.Connectivity.dll.mdb",
+        "lib/wpa81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.dll",
+        "lib/wpa81/Cheesebaron.MvxPlugins.Connectivity.WindowsCommon.pri",
+        "lib/Xamarin.iOS10/Cheesebaron.MvxPlugins.Connectivity.dll",
+        "lib/Xamarin.iOS10/Cheesebaron.MvxPlugins.Connectivity.dll.mdb",
+        "lib/Xamarin.iOS10/Cheesebaron.MvxPlugins.Connectivity.Touch.dll",
+        "package/services/metadata/core-properties/2674440bb1404523a8e9336039239d38.psmdcp"
+      ]
+    },
     "Microsoft.ApplicationInsights/1.0.0": {
       "sha512": "HZ47/thX57SOuIivSvIbsR6L9CCb/Yt3IyB2i4KHmmNlf3DO+lqFwWIKDdbDNWKX+qh0Rg20/JSMPK0dwUsYYw==",
       "type": "Package",
@@ -12738,18 +12963,18 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "MvvmCross/4.0.0": {
-      "sha512": "L9+1zpS3xAx0Fa5bX0P9J05HlWv8+ICj1Dhn2RoQFONtJqNObU00MkLdJRBcvIH7vpdPEsoz3SNtYpspn+HE7Q==",
+    "MvvmCross/4.1.0": {
+      "sha512": "pOMNxlSSyWGK5Wwm9Q8xWuU3J8aMS0t6FJIfO/J5B5LDeUbYvOpVYE3Fa2grTaVOvyjmAoafWDJB2Tors6tEpg==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
         "_rels/.rels",
         "MvvmCross.nuspec",
-        "package/services/metadata/core-properties/9a7e034d0b5741ef8ce4edc2463d6373.psmdcp"
+        "package/services/metadata/core-properties/d30ba29232a24e46843de897e4458134.psmdcp"
       ]
     },
-    "MvvmCross.Binding/4.0.0": {
-      "sha512": "ViHZIlEEM4lf2mOJiHbNMbWFs36dePMTyS1zIlIvfPfVUc6GEapnErhZ19W6nzZZG7NKa2d6i0YUrshLw6AT5A==",
+    "MvvmCross.Binding/4.1.0": {
+      "sha512": "W30/XqE7LTE1qWu9NY5XlIRWz1NQJP544kUukoFePSYIbbOvUOXOmgN/h460vVye5wnSq/TmgdhxqnE88nRMCg==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -12775,14 +13000,20 @@
         "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.dll.mdb",
         "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.dll",
         "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.dll.mdb",
+        "lib/portable-win81+wpa81/MvvmCross.Binding.dll",
+        "lib/portable-win81+wpa81/MvvmCross.Binding.dll.mdb",
         "lib/portable-win81+wpa81/MvvmCross.Localization.dll",
         "lib/portable-win81+wpa81/MvvmCross.Localization.dll.mdb",
+        "lib/win81/MvvmCross.Binding.dll",
+        "lib/win81/MvvmCross.Binding.dll.mdb",
         "lib/win81/MvvmCross.Localization.dll",
         "lib/win81/MvvmCross.Localization.dll.mdb",
         "lib/wp8/MvvmCross.Binding.dll",
         "lib/wp8/MvvmCross.Binding.dll.mdb",
         "lib/wp8/MvvmCross.Localization.dll",
         "lib/wp8/MvvmCross.Localization.dll.mdb",
+        "lib/wpa81/MvvmCross.Binding.dll",
+        "lib/wpa81/MvvmCross.Binding.dll.mdb",
         "lib/wpa81/MvvmCross.Localization.dll",
         "lib/wpa81/MvvmCross.Localization.dll.mdb",
         "lib/Xamarin.iOS10/MvvmCross.Binding.dll",
@@ -12798,11 +13029,11 @@
         "lib/Xamarin.Mac20/MvvmCross.Localization.dll",
         "lib/Xamarin.Mac20/MvvmCross.Localization.dll.mdb",
         "MvvmCross.Binding.nuspec",
-        "package/services/metadata/core-properties/55916a9779bd4830b0d41b2e5b0118fd.psmdcp"
+        "package/services/metadata/core-properties/77159147f9b64621813d53c459ddfb3a.psmdcp"
       ]
     },
-    "MvvmCross.Core/4.0.0": {
-      "sha512": "tUS2aluir/2ie82ILmQFZoIhxT8o+MgDMv4z8NCLGwHVGoqU1WA238lA0fcXVFNXvcMktnr6iV6S0cpxo7IpZQ==",
+    "MvvmCross.Core/4.1.0": {
+      "sha512": "yfxzpL2UpyRzjJMyD99nePtLpMndvu0sgIEgiwswqvU6Y8V6XwtNgYLFrNA1/6v0YQ1M0+Kwcu94sKHmPL5+hg==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -12838,11 +13069,11 @@
         "lib/Xamarin.Mac20/MvvmCross.Mac.dll",
         "lib/Xamarin.Mac20/MvvmCross.Mac.dll.mdb",
         "MvvmCross.Core.nuspec",
-        "package/services/metadata/core-properties/3e50cbf4348a49d98dc7158115dedfa6.psmdcp"
+        "package/services/metadata/core-properties/122d4bc2603a4e8c8328f9e6456b502d.psmdcp"
       ]
     },
-    "MvvmCross.Platform/4.0.0": {
-      "sha512": "PAwMCnppKblgGqFUugXaz4DQVWUXgsm2rQU54b5e1wgKbeZQ+F0VTstDv5FIY0ZwdwNq98Ky37xa/k8pZOOIKA==",
+    "MvvmCross.Platform/4.1.0": {
+      "sha512": "YcpR+chmmOLDT6ktapadcUbX0Zm5fCew5xLqfhfSMX5Uo8VmYqBbBCP/POi4EMbceU1MGRVvlbvOw2VOvb5pGg==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -12885,7 +13116,35 @@
         "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.dll",
         "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.dll.mdb",
         "MvvmCross.Platform.nuspec",
-        "package/services/metadata/core-properties/61c744d2795d43adbb5960b10d375fdf.psmdcp"
+        "package/services/metadata/core-properties/8c73a28b440d4c53960dd3cd3c0b70b5.psmdcp"
+      ]
+    },
+    "MvvmCross.Plugin.Messenger/4.0.0": {
+      "sha512": "5vo8XYoEct2Pea8w1ukf3wk4AM4Bb0OFD64LXohLuWi66LaTcTl6YONV5Vip0DCu5EJhLRmxaZrwi9JXty/ybA==",
+      "type": "Package",
+      "files": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "content/MonoAndroid/Bootstrap/MessengerPluginBootstrap.cs.pp",
+        "content/net45/Bootstrap/MessengerPluginBootstrap.cs.pp",
+        "content/netcore45/Bootstrap/MessengerPluginBootstrap.cs.pp",
+        "content/win81/Bootstrap/MessengerPluginBootstrap.cs.pp",
+        "content/wp8/Bootstrap/MessengerPluginBootstrap.cs.pp",
+        "content/wpa81/Bootstrap/MessengerPluginBootstrap.cs.pp",
+        "content/Xamarin.iOS10/Bootstrap/MessengerPluginBootstrap.cs.pp",
+        "lib/dotnet/MvvmCross.Plugins.Messenger.dll",
+        "lib/MonoAndroid/MvvmCross.Plugins.Messenger.dll",
+        "lib/net45/MvvmCross.Plugins.Messenger.dll",
+        "lib/netcore45/MvvmCross.Plugins.Messenger.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Plugins.Messenger.dll",
+        "lib/portable-win81+wpa81/MvvmCross.Plugins.Messenger.dll",
+        "lib/win81/MvvmCross.Plugins.Messenger.dll",
+        "lib/wp8/MvvmCross.Plugins.Messenger.dll",
+        "lib/wpa81/MvvmCross.Plugins.Messenger.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Plugins.Messenger.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Plugins.Messenger.dll",
+        "MvvmCross.Plugin.Messenger.nuspec",
+        "package/services/metadata/core-properties/db0d94912e2b45caa4ac5ca9fb85578c.psmdcp"
       ]
     },
     "Newtonsoft.Json/6.0.8": {
@@ -15611,12 +15870,13 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Cheesebaron.MvxPlugins.Connectivity >= 0.0.2",
       "Microsoft.ApplicationInsights >= 1.0.0",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.0.0",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
       "Microsoft.Rest.ClientRuntime >= 2.1.0",
-      "MvvmCross >= 4.0.0"
+      "MvvmCross >= 4.1.0"
     ],
     "UAP,Version=v10.0": []
   }
