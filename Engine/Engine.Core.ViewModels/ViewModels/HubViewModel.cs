@@ -1,4 +1,5 @@
 using Engine.Core.Services;
+using Engine.Core.ViewModels.ViewModels;
 using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 
@@ -42,7 +43,18 @@ namespace Engine.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => ShowViewModel<HubViewModel>());
+                return new MvxCommand<string>((arg) =>
+                {
+                    switch (MenuList.IndexOf(arg))
+                    {
+                        case 5:
+                            ShowViewModel<PlatformApisViewModel>();
+
+                            break;
+                        default:
+                            break;
+                    }
+                });
             }
         }
 

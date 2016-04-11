@@ -14,9 +14,10 @@
         <ListView ItemsSource="{Binding MenuList}"
                   IsItemClickEnabled="True">
             <interactivity:Interaction.Behaviors>
-            <core:EventTriggerBehavior EventName="ItemClick">
-                <core:InvokeCommandAction Command="{Binding NavigateCommand}" >
-            </core:EventTriggerBehavior>
+                <core:EventTriggerBehavior EventName="ItemClick">
+                    <core:InvokeCommandAction Command="{Binding NavigateCommand}"
+                                              InputConverter="{StaticResource ItemClickConverter}" />
+                </core:EventTriggerBehavior>
             </interactivity:Interaction.Behaviors>
         </ListView>
     </Grid>
