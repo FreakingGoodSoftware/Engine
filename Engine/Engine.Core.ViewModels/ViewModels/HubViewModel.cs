@@ -47,6 +47,9 @@ namespace Engine.Core.ViewModels
                 {
                     switch (MenuList.IndexOf(arg))
                     {
+                        case 0:
+                            ShowViewModel<WebAccessViewModel>();
+                            break;
                         case 5:
                             ShowViewModel<PlatformApisViewModel>();
 

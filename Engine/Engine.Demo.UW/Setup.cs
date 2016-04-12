@@ -20,6 +20,11 @@ namespace Engine.Demo.UW
 
         }
 
+        protected override IMvxTrace CreateDebugTrace()
+        {
+            return new MvxDebugTrace();
+        }
+
         protected override IMvxApplication CreateApp()
         {
             return new Engine.Core.App();

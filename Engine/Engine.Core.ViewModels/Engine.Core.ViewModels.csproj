@@ -38,6 +38,7 @@
     <Compile Include="ViewModels\BluetoothViewModel.cs" />
     <Compile Include="ViewModels\HubViewModel.cs" />
     <Compile Include="ViewModels\PlatformApisViewModel.cs" />
+    <Compile Include="ViewModels\WebAccessViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -1,4 +1,5 @@
 ﻿using Engine.Core.ViewModels;
+using Engine.Demo.UW.Common;
 using MvvmCross.WindowsUWP.Views;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,7 +24,7 @@ namespace Engine.Demo.UW.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class HubView : MvxWindowsPage
+    public sealed partial class HubView : BaseWindowsPage
     {
         public new HubViewModel ViewModel
         {
@@ -33,7 +35,6 @@ namespace Engine.Demo.UW.Views
         public HubView()
         {
             this.InitializeComponent();
-            NavigationCacheMode = NavigationCacheMode.Required;
         }
     }
 }

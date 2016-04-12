@@ -1,4 +1,5 @@
 ﻿using Engine.Core.ViewModels.ViewModels;
+using Engine.Demo.UW.Common;
 using MvvmCross.WindowsUWP.Views;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,7 @@ namespace Engine.Demo.UW.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PlatformApisView : MvxWindowsPage
+    public sealed partial class PlatformApisView : BaseWindowsPage
     {
         public new PlatformApisViewModel ViewModel
         {
