@@ -36,8 +36,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BluetoothViewModel.cs" />
+    <Compile Include="ViewModels\FormsInputViewModel.cs" />
     <Compile Include="ViewModels\HubViewModel.cs" />
+    <Compile Include="ViewModels\ListPresentationViewModel.cs" />
     <Compile Include="ViewModels\PlatformApisViewModel.cs" />
+    <Compile Include="ViewModels\ServicesPluginsViewModel.cs" />
     <Compile Include="ViewModels\WebAccessViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
