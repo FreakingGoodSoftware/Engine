@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Engine.Core.ViewModels.ViewModels
 {
-    public class ServicesPluginsViewModel : MvxViewModel
+    public class NavigationViewModel : MvxViewModel
     {
         public List<string> MenuList { get; set; } = new List<string>
-        {   "Json localization",
-            "Standard dialogs",
-            "Connectivity",
-            "Pictures",
-            "Location",
-            "Converters"
+        {   "Stack navigation",
+            "Master detail",
+            "Paging",
+            "Tab navigation",
+            "Menu navigation",
+            "Modals"
         };
     }
 }

@@ -50,9 +50,20 @@ namespace Engine.Core.ViewModels
                         case 0:
                             ShowViewModel<WebAccessViewModel>();
                             break;
+                        case 1:
+                            ShowViewModel<NavigationViewModel>();
+                            break;
+                        case 2:
+                            ShowViewModel<FormsInputViewModel>();
+                            break;
+                        case 3:
+                            ShowViewModel<ListPresentationViewModel>();
+                            break;
+                        case 4:
+                            ShowViewModel<ServicesPluginsViewModel>();
+                            break;
                         case 5:
                             ShowViewModel<PlatformApisViewModel>();
-
                             break;
                         default:
                             break;
