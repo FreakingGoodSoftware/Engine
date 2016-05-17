@@ -38,11 +38,13 @@ namespace Engine.Demo.UW.Common
         /// in addition to page state preserved during an earlier session.
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
+            base.OnNavigatedTo(e);
             navigationHelper.OnNavigatedFrom(e);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            base.OnNavigatedTo(e);
             navigationHelper.OnNavigatedTo(e);
 
             Frame rootFrame = Window.Current.Content as Frame;
